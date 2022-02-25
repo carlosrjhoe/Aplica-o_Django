@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'alurareceitas.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgrespl',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'alura_receita',
         'USER': 'postgres',
         'PASSWORD': 'laracroft360',
