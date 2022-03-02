@@ -52,3 +52,15 @@ Nessa aula:
 - Exibi as receitas que estão no banco de dados;
 
 - Alterei a `url` da index, exibindo como cada receita é feita, seus ingredientes e outras informações.
+
+## Projeto final aula 6
+
+Nessa aula:
+
+- Realize filtros e crie listas no seu site
+
+- Crie e integre modelos
+
+- Faça o admin do seu site com o Django admin
+
+- Saiba como criar uma página de busca com páginação
