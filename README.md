@@ -64,3 +64,8 @@ Nessa aula:
 - Faça o admin do seu site com o Django admin
 
 - Saiba como criar uma página de busca com páginação
+
+Nesta aula:
+- Criei o app de usuários, configurei as URLs e as rotas, além de registrar o app no projeto;
+
+- Incluí também os formulários de login, cadastro, logout e dashboard, com suas respectivas funções em views.py de usuários.
