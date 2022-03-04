@@ -1,5 +1,7 @@
+from django.forms import PasswordInput
 from django.shortcuts import redirect, render
 from django.contrib.auth.models import User
+from django.contrib import auth
 
 # Create your views here.
 def cadastro(request):
@@ -28,10 +30,23 @@ def cadastro(request):
         return render(request, 'usuarios/cadastro.html')
 
 def login(request):
+    if request.method == 'POST':
+        email = request.POST['email']
+        senha = request.POST['senha']
+        if email == '' or senha == '':
+            print('Favor colocar email ou senha!!!')
+            return redirect('login')
+        if User.objects.filter(email=email).exists():
+            nome = User.objects.filter(email=email).values_list('username', flat=True).get()
+            user = auth.authenticate(request, username=nome, password=senha)
+            if user is not None:
+                auth.login(request, user)
+                print('Login realizado')
+                return redirect('dashboard')
     return render(request, 'usuarios/login.html')
 
 def dashboard(request):
-    pass
+    return render(request, 'usuarios/dashboard.html')
 
 def logout(request):
     pass
