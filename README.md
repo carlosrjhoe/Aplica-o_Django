@@ -65,7 +65,20 @@ Nessa aula:
 
 - Saiba como criar uma página de busca com páginação
 
+## Projeto final aula 7
+
 Nesta aula:
+
 - Criei o app de usuários, configurei as URLs e as rotas, além de registrar o app no projeto;
 
 - Incluí também os formulários de login, cadastro, logout e dashboard, com suas respectivas funções em views.py de usuários.
+
+## Projeto final aula 8
+
+Nesta aula:
+
+- Tentei recuperar os dados do formulário através do verbo HTTP POST, porém, recebi uma mensagem informando que o token de segurança não foi encontrado;
+
+- Para solucionar, adicionei a template tag {% csrf_token %} e recuperei o nome enviado na requisição através do código request.POST['nome'];
+
+- Crieis algumas validações e um novo usuário na aplicação.
