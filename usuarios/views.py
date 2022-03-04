@@ -1,4 +1,3 @@
-from django.forms import PasswordInput
 from django.shortcuts import redirect, render
 from django.contrib.auth.models import User
 from django.contrib import auth
@@ -45,8 +44,12 @@ def login(request):
                 return redirect('dashboard')
     return render(request, 'usuarios/login.html')
 
-def dashboard(request):
-    return render(request, 'usuarios/dashboard.html')
-
 def logout(request):
-    pass
+    auth.logout(request)
+    return redirect('index')
+
+def dashboard(request):
+    if request.user.is_authenticated:
+        return render(request, 'usuarios/dashboard.html')
+    else:
+        return redirect('index')
