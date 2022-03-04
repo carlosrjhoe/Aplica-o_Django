@@ -82,3 +82,13 @@ Nesta aula:
 - Para solucionar, adicionei a template tag {% csrf_token %} e recuperei o nome enviado na requisição através do código request.POST['nome'];
 
 - Crieis algumas validações e um novo usuário na aplicação.
+
+## Projeto final aula 9
+
+Nesta aula:
+
+- Buscamos os dados email e senha para realizar o login do usuário, passando o token de segurança e criamos a página de dashboard onde renderizamos caso os campos do formulário não estejam em branco;
+
+- Realizamos o login do usuário, caso as credenciais estejam corretas exibindo o nome do usuário com o código user.username;
+
+- Melhoramos a página de dashboard e alteramos os links do menu caso o usuário esteja logado, além de criarmos uma forma do usuário realizar o logout.
