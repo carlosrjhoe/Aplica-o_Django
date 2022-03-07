@@ -57,7 +57,7 @@
                         <!-- Nav Start -->
                         <div class="classynav">
                             <ul>
-                                <!--Se o usuário estiver logado, mostrar essa "LI"-->
+                                <!-- Se o usuário estiver logado, mostrar essa "LI" -->
                                 {% if user.is_authenticated %}
                                     <li><a href="{% url 'index' %}">Página principal</a></li>
                                     <li><a href="{% url 'dashboard' %}">Minhas receitas</a></li>

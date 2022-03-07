@@ -1,6 +1,6 @@
 from django.shortcuts import redirect, render
 from django.contrib.auth.models import User
-from django.contrib import auth
+from django.contrib import auth # Modulo de login
 
 # Create your views here.
 def cadastro(request):
@@ -32,6 +32,7 @@ def login(request):
     if request.method == 'POST':
         email = request.POST['email']
         senha = request.POST['senha']
+        """ Verificação de email e senha """
         if email == '' or senha == '':
             print('Favor colocar email ou senha!!!')
             return redirect('login')
@@ -48,6 +49,7 @@ def logout(request):
     auth.logout(request)
     return redirect('index')
 
+""" Verificando se o usuario está logado """
 def dashboard(request):
     if request.user.is_authenticated:
         return render(request, 'usuarios/dashboard.html')
