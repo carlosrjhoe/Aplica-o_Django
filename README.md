@@ -87,8 +87,16 @@ Nesta aula:
 
 Nesta aula:
 
-- Buscamos os dados email e senha para realizar o login do usuário, passando o token de segurança e criamos a página de dashboard onde renderizamos caso os campos do formulário não estejam em branco;
+- Busquei os dados email e senha para realizar o login do usuário, passando o token de segurança e criei a página de dashboard onde renderizei caso os campos do formulário não estejam em branco;
 
-- Realizamos o login do usuário, caso as credenciais estejam corretas exibindo o nome do usuário com o código user.username;
+- Realizei o login do usuário, caso as credenciais estejam corretas exibindo o nome do usuário com o código user.username;
 
-- Melhoramos a página de dashboard e alteramos os links do menu caso o usuário esteja logado, além de criarmos uma forma do usuário realizar o logout.
+- Melhorei a página de dashboard e alteramos os links do menu caso o usuário esteja logado, além de criar uma forma do usuário realizar o logout.
+
+## Projeto final aula 10
+
+Nesta aula:
+
+- Criei um botão capaz de deletar as receitas que criei;
+
+- Removi o app de pessoas da aplicação e do banco de dados.
