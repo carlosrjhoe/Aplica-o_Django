@@ -1,6 +1,6 @@
 from django.shortcuts import redirect, render, get_object_or_404
 from django.contrib.auth.models import User
-from django.contrib import auth # Modulo de login
+from django.contrib import auth, messages # Modulo de login
 from receitas.models import Receita
 
 # Create your views here.
@@ -17,6 +17,7 @@ def cadastro(request):
             print('Não pode ficar em branco')
             return redirect('cadastro')
         if senha != senha2:
+            messages.error(request, 'As senhas não são iguais!')
             print('As senhas não são iguais!')
             return redirect('cadastro')
         if User.objects.filter(email=email).exists():
@@ -25,6 +26,7 @@ def cadastro(request):
         user = User.objects.create_user(username=nome, email=email, password=senha)
         user.save()
         print('Usuario cadastrado com sucesso!!!')
+        messages.success(request, 'Cadastro realizado com sucesso!')
         return redirect('login')
     else:
         return render(request, 'usuarios/cadastro.html')
