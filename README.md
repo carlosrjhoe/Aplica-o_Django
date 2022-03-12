@@ -108,3 +108,14 @@ Nesta aula:
 - Criei o botão editar em cada receita, onde exibo o formulário da receita com as informações para editar ou alterar algum campo ou imagem;
 
 - Após a edição, realizei a atualização da receita no banco de dados.
+
+## Projeto final aula 12
+
+Nesta aula:
+
+- Refatorei a pasta de template, criando uma pasta para manter o template de cada app;
+
+- Alterei alguns métodos da view de usuários para view de receita;
+
+- Modularizei a view, dividindo as responsabilidades e trabalhando com mais de uma view por app.
+
