@@ -100,3 +100,11 @@ Nesta aula:
 - Criei um botão capaz de deletar as receitas que criei;
 
 - Removi o app de pessoas da aplicação e do banco de dados.
+
+## Projeto final aula 11
+
+Nesta aula:
+
+- Criei o botão editar em cada receita, onde exibo o formulário da receita com as informações para editar ou alterar algum campo ou imagem;
+
+- Após a edição, realizei a atualização da receita no banco de dados.
