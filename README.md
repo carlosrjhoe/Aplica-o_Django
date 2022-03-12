@@ -119,3 +119,10 @@ Nesta aula:
 
 - Modularizei a view, dividindo as responsabilidades e trabalhando com mais de uma view por app.
 
+## Projeto final aula 13
+
+Nesta aula:
+
+- Criei uma pasta para manter nossos apps;
+
+- Identifiquei melhor minhas classes, métodos ou funções através de docstrings.
